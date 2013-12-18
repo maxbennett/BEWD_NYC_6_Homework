@@ -1,0 +1,21 @@
+<body style="text-align:center">
+<h1> The Rock Paper Scissors Game </h1>
+<p>Choose rock, paper, or scissors</p>
+<% if @move == @opponent %>
+<h3>TIE</h3>
+<h4>Try Again!</h4>
+<% ["rock", "paper", "scissors"].each do |move| %>
+	<%= link_to(image_tag("#{move}.png"), "/rock_paper/#{move}") %>
+	<br><br>
+<% end %>
+<% elsif (@move=="rock" && @opponent=="scissors") || (@move=="paper" && @opponent=="rock") || (@move=="scissors" && @opponent=="paper") %>
+<h3> You Win! </h3>
+<%= link_to "Play Again", "/rock_paper/" %>
+<%else%>
+<h3> You Lose! </h3>
+<%= link_to "Play Again", "/rock_paper/" %>
+<% end %>
+
+<br><br><br><br>
+<%= @move%><p>vs</p><%=@opponent%>
+</body>

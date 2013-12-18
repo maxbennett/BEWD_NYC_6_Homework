@@ -1,0 +1,8 @@
+<% if @number == @guess %>
+<p> You win! </p>
+<%= link_to "Nudie Pic!", "/secret_number" %>
+<% else %>
+<p>You lose!</p>
+<%= link_to "<< Back", "/secret_number" %>
+<% end %>
+

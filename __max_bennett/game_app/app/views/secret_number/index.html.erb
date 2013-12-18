@@ -1,0 +1,8 @@
+<p> Guess a number between 1 and 5 </p>
+<br>
+
+<% 1.upto(5) do |num| %>
+	<%= link_to "/secret_number/#{num}" do %>
+	<%= image_tag "/number_#{num}.png" %>
+	<% end %>
+<% end %>

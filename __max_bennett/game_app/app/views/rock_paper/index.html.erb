@@ -1,0 +1,10 @@
+<body style="text-align:center">
+<h1> The Rock Paper Scissors Game </h1>
+<p>Choose rock, paper, or scissors</p>
+
+
+<% ["rock", "paper", "scissors"].each do |move| %>
+	<%= link_to(image_tag("#{move}.png"), "/rock_paper/#{move}") %>
+<% end %>
+
+</body>
