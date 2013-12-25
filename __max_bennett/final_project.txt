@@ -1,0 +1,6 @@
+For my final project I would like to make a personal project management web app. This web app would have serveral features that differentiate it from other web apps:
+
+
+
+
+The target audience is anyone who likes to set personal goals and/or anyone who is overwhelmed with ToDos.
