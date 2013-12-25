@@ -1,6 +1,19 @@
-For my final project I would like to make a personal project management web app. This web app would have serveral features that differentiate it from other web apps:
+For my final project I would like to make a personal project management web app. This web app would have serveral unique features. Most notably, it will seperate routines from projects, and it will introduce the concept of "requirements".
 
+(1) Tasks will be placed into one of 3 categories: routines, projects, tasks. 
+(2) Routines will be defined as daily, weekly, every n weeks, monthly, every n months, or annually. They will be placed in a seperate UI from projects or tasks. This is one of the new components of this system. Since most project management tools convolute routines with projects. routines have no overarching due date. Tasks in routine would also be different in that they don't "add up". If you plan on reading 100 pages per week. and one week you do not complete the task, you will not end up with one overdue task of 100 pages the next week as well as one for the next week. Rather, it will simply be noted that you missed last week, and the task will remain for this week. 
+(3) Projects will be a group of tasks with a attributes of its own. 
+(4) Each "To-Do" will have several attributes. These include due_date:, order:, requirements:
+    (a) order:, this will be for sorting. For example, if we are in a due_date view, then for todos that statisfy the same due_date, they will be sorted by order. Ideally this will be implicitely defined by the user by dragging and dropping.
+    (b) requirements:, this will specify several different types of inputs required for the "completed" button to be clickable
+    	(i) Minimum word count in text_area: this requires a certain number of words to be written in the task in order for it to be completed. This could be associated with a routine task of reading 2 articles, where the user has to write 100 words about each article because completing the task. This could also replicate a weekly writing requirement
+    	(ii) Input link: this would require a url to be placed into a field before you can complete a task. This could be used for inputing the link to the article that was read.
+    	(iii) None: of course no requirement is possible.
+    	(iv) And potentially others possible requirements to add
+    (c) Status:, a percentage complete.
+    (d) Completed:, boolean for whether or not the task was completed.
+    (e) For every requirement there will also be a field to store the input for later viewing, whether it be a link or a text field.
 
+The UI will have multiple views, I haven't exactly figured out how I want the UI to work but I have a few ideas.  
 
-
-The target audience is anyone who likes to set personal goals and/or anyone who is overwhelmed with ToDos.
+The target audience is anyone who likes to set personal goals.
